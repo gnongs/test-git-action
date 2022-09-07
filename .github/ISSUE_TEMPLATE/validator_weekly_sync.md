@@ -1,7 +1,7 @@
 ---
 name: Validator weekly sync
 about: Validator weekly sync
-title: Validator weekly sync - 2022-XX-XX
+title: Validator weekly sync - {{ date | date('YYYY-MM-DD') }}
 labels: Validators, Weekly sync
 assignees: ''
 
