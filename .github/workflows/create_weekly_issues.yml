@@ -1,7 +1,7 @@
 name: Create New Issue
 on:
   schedule:
-    - cron: "20 * * * 3"
+    - cron: "33 * * * 3"
 
 jobs:
   create_issue:
@@ -9,5 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           filename: .github/ISSUE_TEMPLATE/validator_weekly_sync.md
