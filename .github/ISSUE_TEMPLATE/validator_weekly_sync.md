@@ -3,7 +3,7 @@ name: Validator weekly sync
 about: Validator weekly sync
 title: Validator weekly sync - {{ date | date("add", 8, "days") | date('YYYY-MM-DD') }}
 labels: Validators, Weekly sync
-assignees: '@gnongs'
+assignees: ''
 
 ---
 
