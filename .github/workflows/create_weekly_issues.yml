@@ -13,3 +13,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           filename: .github/ISSUE_TEMPLATE/validator_weekly_sync.md
+          assignees: gnongs
+
