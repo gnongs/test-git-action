@@ -1,7 +1,7 @@
 name: Create New Issue
 on:
   schedule:
-    - cron: "30 7 * * THU"
+    - cron: "30 * * * *"
 
 jobs:
   create_issue:
@@ -14,4 +14,13 @@ jobs:
         with:
           filename: .github/ISSUE_TEMPLATE/validator_weekly_sync.md
           assignees: gnongs
-
+  pin_an_issue:
+    name: pin an issue
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: pin an issue
+      uses: bdougie/issue-pin-by-label@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        LABEL_NAME: weekly_sync
