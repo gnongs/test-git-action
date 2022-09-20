@@ -1,8 +1,6 @@
 on: 
   issues:
-    types: [opened, labeled]
-  schedule:
-    - cron: "15 * * * *"
+    types: [labeled]
 name: pin issue based on label
 jobs:
   pinAnIssue:
@@ -15,4 +13,4 @@ jobs:
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        LABEL_NAME: "Weekly sync"
+        LABEL_NAME: Validators
