@@ -1,6 +1,8 @@
 on: 
-  issues:
-    types: [opened, labeled]
+  workflow_run:
+    workflows: [Create New Issue]
+    types:
+      - completed
 name: pin issue based on label
 jobs:
   pinAnIssue:
