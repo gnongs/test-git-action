@@ -1,7 +1,7 @@
 name: Create New Issue
 on:
   schedule:
-    - cron: "30 * * * *"
+    - cron: "30 10 * * *"
 
 jobs:
   create_issue:
