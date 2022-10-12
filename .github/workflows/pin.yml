@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: pin an issue
-      uses: bdougie/issue-pin-by-label@v4.0.1
+      uses: gnongs/issue-pin-by-label@main
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
